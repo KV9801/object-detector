@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Object Detector</title>
+        <link rel= "stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    </head>
+    {#<body>#}
+      {#<div id="header">#}
+      {#detector:#}
+        {#<a href="{{ url_for('detector') }}">main</a>#}
+        {#<a href="{{ url_for('blog') }}">blog</a>#}
+      {#</div>#}
+      {#<hr>#}
+      {##}
+    {#{% block content %}{% endblock %}#}
+    {#</body>#}
+    
+    <body>
+      <div class="container px-xl-5 py-4">
+        <header>
+          <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+              <span class="fs-4">Rutgers CAIT</span>
+            </a>
+          </div>
+        </header>
+
+      {% block content %}{% endblock %}
+
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+          <div class="row">
+            <div class="col-12 col-md">
+              <small class="d-block mb-3 text-muted">© 2021</small>
+            </div>
+            <div class="col-1 col-md">
+              <ul class="list-unstyled text-small">
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://github.com/KV9801/object-detector">GitHub</a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+
+      </div>
+    </body>
+</html>
